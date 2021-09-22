@@ -44,7 +44,9 @@ html, body, div, span, footer, header {
   .contants_pc {
     position:absolute;
     top:70%;
-    left:1rem;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .contants_m {
