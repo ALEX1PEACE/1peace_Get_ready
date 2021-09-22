@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>1PEACE</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="keywords" content="media tech, marketing, branding">
+    <meta name="description" content="New-type Media Commerce Platform">
+    <link rel="stylesheet" href="./css/styles.css">
+    
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="57x57" href="./assets/fav/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./assets/fav/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./assets/fav/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/fav/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./assets/fav/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./assets/fav/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./assets/favapple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./assets/fav/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/fav/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./assets/fav/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./assets/fav/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favfavicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./assets/fav/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- WEB Fonts
+    ================================================== -->
+    <link rel="stylesheet" href="https://use.typekit.net/aos2jgd.css">
+    
+    <!-- Facebook meta
+    ================================================== -->
+    <meta name="facebook-domain-verification" content="b2itlrkt7yq90odr1z6puulrz780j9">
+    
+    <!-- Global site tag (gtag.js) - Google Analytics
+    ================================================== -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-4CZNE26GJ8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-4CZNE26GJ8');
+    </script>
+</head>
+<body>
+  <div id="wrapper_pc" style="display: none;">
+    <div class="bg">
+      <div class="bg_container">
+        <a href="https://www.instagram.com/1peace_official/" target="blank">
+          <img src="./assets/index_bg_l.gif" alt="1peace">
+        </a>
+        <div class="contants_pc">
+          <p class="title_pc">ONE-of-a-kind PIECE = ONE PEACE</p>
+          <p class="des_pc"> 
+           1PEACE platform is new bit fashion out of old fashion<br>
+           1PEACE 플랫폼은 구식 패션에서 벗어난 새로운 비트 패션입니다.<br>
+           1PEACE プラットフォームは旧式の新しいファッションです<br>
+           1PEACE 平台是旧时尚的新比特时尚</p>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer_wrap clearfix">
+        <p class="company_name">Memory of love (MOL) ⎟ Seoul🇰🇷 Newyork🇺🇸 ⎟ <a href="mailto:hello@the1peace.com?subject=[문의]."> hello@the1peace.com </a></p>
+        <p class="copyright">Copyright © MOL, All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
+  <div id="wrapper_m" style="display: none;">
+    <header>
+      <a href="/">
+        <div class="logo_m"></div>
+      </a>
+      <div class="header_bg"></div>
+    </header>
+    <div class="bg">
+      <div class="bg_container">
+        <a href="https://www.instagram.com/1peace_official/" target="blank">
+          <img src="./assets/index_bg_l.gif" alt="1peace">
+        </a>
+        <div class="contants_m">
+          <p class="title_m">ONE-of-a-kind PIECE = ONE PEACE</p>
+          <p class="des_m">
+           1PEACE platform is new bit fashion out of old fashion<br>
+           1PEACE 플랫폼은 구식 패션에서 벗어난 새로운 비트 패션입니다.<br>
+           1PEACE プラットフォームは旧式の新しいファッションです<br>
+           1PEACE 平台是旧时尚的新比特时尚</p>
+        </div>
+    </div>
+    <footer>
+      <div class="footer_wrap">
+        <p>Memory of love (MOL)</p>
+        <p>Seoul🇰🇷 Newyork🇺🇸 ⎟ <a href="mailto:hello@the1peace.com?subject=[문의]."> hello@the1peace.com </a></p>
+        <br/>
+        <p>Copyright © MOL, All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
+  <script src="./js/lottie.min.js"></script>
+  <script>
+    var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    var $elements = isMobile ? document.getElementById('wrapper_m') : document.getElementById('wrapper_pc');
+    $elements.style.display = '';
+    bodymovin.loadAnimation({
+      container: $elements.querySelector('.logo'),
+      path: './assets/index_ci.json',
+      renderer: 'svg/canvas/html',
+      loop: true,
+      autoplay: true,
+    })
+  </script>
+</body>
+</html>
+
+
